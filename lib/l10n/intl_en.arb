@@ -1,0 +1,8 @@
+{
+  "@@locale": "en",
+  "homePage_userName": "Shivani Bagal",
+  "wrongRoute_message_error": "Wrong Route",
+  "button_backToTop": "Back To Top",
+  "field_emptyTextData": "-------",
+  "formField_error_isEmpty": "{fieldName} is required"
+}

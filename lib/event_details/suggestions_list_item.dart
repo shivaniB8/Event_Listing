@@ -1,4 +1,3 @@
-import 'package:all_events_task/common/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:transparent_image/transparent_image.dart';
 
@@ -24,7 +23,6 @@ class UpdatesListingDashBoardState extends State<UpdatesListingDashBoard> {
         ),
         Stack(
           children: [
-            // Image.network('https://static.vecteezy.com/system/resources/previews/008/390/796/original/abstract-background-purple-red-gradient-free-vector.jpg'),
             Column(
               children: [
                 SizedBox(
@@ -66,7 +64,7 @@ class UpdatesPageListItem extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(top: 20, right: 10, bottom: 16),
           child: Container(
-            width: 280,
+            width: 230,
             decoration: BoxDecoration(
               shape: BoxShape.rectangle,
               border: Border.all(color: Colors.grey),

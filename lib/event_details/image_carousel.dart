@@ -47,7 +47,7 @@ class _ImageCarouselState extends State<ImageCarousel> {
                               );
                             },
                             image: widget.imageList[index],
-                            height: 170,
+                            height: 150,
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -77,7 +77,7 @@ class _ImageCarouselState extends State<ImageCarousel> {
           Visibility(
             visible: _isMultiBannerAssets(),
             child: Positioned(
-              top: 150,
+              top: 130,
               left: 0,
               right: 0,
               child: Row(

@@ -87,7 +87,7 @@ class EventDetailsPage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           SizedBox(
-                              width: 300,
+                              width: 280,
                               child: Text(
                                 event.eventName ?? '',
                                 style: text_style_title7,
@@ -220,18 +220,23 @@ class EventDetailsPage extends StatelessWidget {
                               Rect.fromLTRB(0, 0, rect.width, rect.height));
                         },
                         blendMode: BlendMode.dstIn,
-                        child: Container(
-                          height: 170,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: Image.network(
-                                      'https://static1.anpoimages.com/wordpress/wp-content/uploads/2022/07/googleMapsTricksHero.jpg')
-                                  .image,
-                              fit: BoxFit.fitWidth,
+                        child: GestureDetector(
+                          onTap: (){
+                            openMap(event.venue?.latitude?.toDouble()??0, event.venue?.longitude?.toDouble()??0);
+                          },
+                          child: Container(
+                            height: 170,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: Image.network(
+                                        'https://static1.anpoimages.com/wordpress/wp-content/uploads/2022/07/googleMapsTricksHero.jpg')
+                                    .image,
+                                fit: BoxFit.fitWidth,
+                              ),
+                              shape: BoxShape.rectangle,
+                              borderRadius:
+                                  const BorderRadius.all(Radius.circular(10)),
                             ),
-                            shape: BoxShape.rectangle,
-                            borderRadius:
-                                const BorderRadius.all(Radius.circular(10)),
                           ),
                         ),
                       ),

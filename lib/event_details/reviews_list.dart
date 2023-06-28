@@ -81,6 +81,7 @@ class ReviewsList extends StatelessWidget {
                         style: text_style_title5.copyWith(
                           fontWeight: FontWeight.w500,
                           fontSize: 12,
+                          color: Colors.black54,
                         ),
                       ),
                       const SizedBox(

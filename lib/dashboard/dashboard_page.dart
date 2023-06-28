@@ -55,8 +55,9 @@ class _DashboardPageState extends State<DashboardPage> {
     final List<EventDetailsResponse>? items = eventList?.item;
     return Scaffold(
       appBar: AppBar(
+        leading: const Icon(Icons.menu,color: Colors.black,),
         title: const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 10),
+          padding: EdgeInsets.symmetric( vertical: 10),
           child: Text(
             'Events',
             style: text_style_title3,
@@ -280,7 +281,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                       color: Colors.blue,
                     ),
                     SizedBox(
-                      width: 5,
+                      width: 2,
                     ),
                     Text(
                       'Categories',
@@ -393,10 +394,10 @@ class FiltersBottomSheet extends StatelessWidget {
 
           // White space
           const SizedBox(
-            height: 26,
+            height: 20,
           ),
           Padding(
-            padding: const EdgeInsets.all(15.0),
+            padding: const EdgeInsets.all(10.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -408,9 +409,9 @@ class FiltersBottomSheet extends StatelessWidget {
                 Row(
                   children: [
                     Chip(
-                      labelPadding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      labelPadding: const EdgeInsets.symmetric(horizontal: 5.0),
                       label: const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 3),
+                        padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 3),
                         child: Text(
                           'Music',
                           style: text_style_title13
@@ -423,9 +424,9 @@ class FiltersBottomSheet extends StatelessWidget {
                     ),
                     const SizedBox(width: 10,),
                     Chip(
-                      labelPadding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      labelPadding: const EdgeInsets.symmetric(horizontal: 5.0),
                       label: const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 3),
+                        padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 3),
                         child: Text(
                           'Concerts',
                           style:text_style_title13
@@ -438,9 +439,9 @@ class FiltersBottomSheet extends StatelessWidget {
                     ),
                     const SizedBox(width: 10,),
                     Chip(
-                      labelPadding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      labelPadding: const EdgeInsets.symmetric(horizontal: 5.0),
                       label: const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 3),
+                        padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 3),
                         child: Text(
                           'Parties & Nightlife',
                           style: text_style_title13,
@@ -456,9 +457,9 @@ class FiltersBottomSheet extends StatelessWidget {
                 Row(
                   children: [
                     Chip(
-                      labelPadding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      labelPadding: const EdgeInsets.symmetric(horizontal: 5.0),
                       label: const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 3),
+                        padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 3),
                         child: Text(
                             'Performances',
                             style: text_style_title13
@@ -471,9 +472,9 @@ class FiltersBottomSheet extends StatelessWidget {
                     ),
                     const SizedBox(width: 10,),
                     Chip(
-                      labelPadding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      labelPadding: const EdgeInsets.symmetric(horizontal: 5.0),
                       label: const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 3),
+                        padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 3),
                         child: Text(
                             'Comedy',
                             style:text_style_title13
@@ -486,9 +487,9 @@ class FiltersBottomSheet extends StatelessWidget {
                     ),
                     const SizedBox(width: 10,),
                     Chip(
-                      labelPadding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      labelPadding: const EdgeInsets.symmetric(horizontal: 5.0),
                       label: const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 3),
+                        padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 3),
                         child: Text(
                           'Dance',
                           style: text_style_title13,
@@ -515,9 +516,9 @@ class FiltersBottomSheet extends StatelessWidget {
                 Row(
                   children: [
                     Chip(
-                      labelPadding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      labelPadding: const EdgeInsets.symmetric(horizontal: 5.0),
                       label: const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 3),
+                        padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 3),
                         child: Text(
                             'Fine Arts',
                             style: text_style_title13
@@ -530,9 +531,9 @@ class FiltersBottomSheet extends StatelessWidget {
                     ),
                     const SizedBox(width: 10,),
                     Chip(
-                      labelPadding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      labelPadding: const EdgeInsets.symmetric(horizontal: 5.0),
                       label: const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 3),
+                        padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 3),
                         child: Text(
                             'Theatre',
                             style:text_style_title13
@@ -545,9 +546,9 @@ class FiltersBottomSheet extends StatelessWidget {
                     ),
                     const SizedBox(width: 10,),
                     Chip(
-                      labelPadding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      labelPadding: const EdgeInsets.symmetric(horizontal: 5.0),
                       label: const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 3),
+                        padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 3),
                         child: Text(
                           'Literary Art',
                           style: text_style_title13,
@@ -563,9 +564,9 @@ class FiltersBottomSheet extends StatelessWidget {
                 Row(
                   children: [
                     Chip(
-                      labelPadding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      labelPadding: const EdgeInsets.symmetric(horizontal: 5.0),
                       label: const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 3),
+                        padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 3),
                         child: Text(
                             'Cooking',
                             style: text_style_title13
@@ -578,9 +579,9 @@ class FiltersBottomSheet extends StatelessWidget {
                     ),
                     const SizedBox(width: 10,),
                     Chip(
-                      labelPadding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      labelPadding: const EdgeInsets.symmetric(horizontal: 5.0),
                       label: const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 3),
+                        padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 3),
                         child: Text(
                             'Photography',
                             style:text_style_title13
@@ -593,9 +594,9 @@ class FiltersBottomSheet extends StatelessWidget {
                     ),
                     const SizedBox(width: 10,),
                     Chip(
-                      labelPadding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      labelPadding: const EdgeInsets.symmetric(horizontal: 5.0),
                       label: const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 3),
+                        padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 3),
                         child: Text(
                           'Craft',
                           style: text_style_title13,
@@ -622,9 +623,9 @@ class FiltersBottomSheet extends StatelessWidget {
                 Row(
                   children: [
                     Chip(
-                      labelPadding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      labelPadding: const EdgeInsets.symmetric(horizontal: 5.0),
                       label: const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 3),
+                        padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 3),
                         child: Text(
                             'Fine Arts',
                             style: text_style_title13
@@ -637,9 +638,9 @@ class FiltersBottomSheet extends StatelessWidget {
                     ),
                     const SizedBox(width: 10,),
                     Chip(
-                      labelPadding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      labelPadding: const EdgeInsets.symmetric(horizontal: 5.0),
                       label: const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 3),
+                        padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 3),
                         child: Text(
                             'Performance',
                             style:text_style_title13
@@ -652,9 +653,9 @@ class FiltersBottomSheet extends StatelessWidget {
                     ),
                     const SizedBox(width: 10,),
                     Chip(
-                      labelPadding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      labelPadding: const EdgeInsets.symmetric(horizontal: 5.0),
                       label: const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 3),
+                        padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 3),
                         child: Text(
                           'Dance',
                           style: text_style_title13,
@@ -670,9 +671,9 @@ class FiltersBottomSheet extends StatelessWidget {
                 Row(
                   children: [
                     Chip(
-                      labelPadding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      labelPadding: const EdgeInsets.symmetric(horizontal: 5.0),
                       label: const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 3),
+                        padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 3),
                         child: Text(
                             '3d Animation',
                             style: text_style_title13
@@ -685,9 +686,9 @@ class FiltersBottomSheet extends StatelessWidget {
                     ),
                     const SizedBox(width: 10,),
                     Chip(
-                      labelPadding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      labelPadding: const EdgeInsets.symmetric(horizontal: 5.0),
                       label: const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 3),
+                        padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 3),
                         child: Text(
                             'Fine Arts',
                             style:text_style_title13
@@ -700,9 +701,9 @@ class FiltersBottomSheet extends StatelessWidget {
                     ),
                     const SizedBox(width: 10,),
                     Chip(
-                      labelPadding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      labelPadding: const EdgeInsets.symmetric(horizontal: 5.0),
                       label: const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 3),
+                        padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 3),
                         child: Text(
                           'Arts',
                           style: text_style_title13,

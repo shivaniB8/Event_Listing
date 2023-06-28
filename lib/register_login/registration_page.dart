@@ -1,6 +1,3 @@
-
-
-import 'package:all_events_task/common/colors.dart';
 import 'package:all_events_task/common/style.dart';
 import 'package:all_events_task/register_login/login_page.dart';
 import 'package:all_events_task/register_login/model/user_details.dart';
@@ -36,8 +33,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                 Container(
                   height: 260,
                   margin: EdgeInsets.zero,
-                  child: Lottie.network(
-                      'https://assets4.lottiefiles.com/private_files/lf30_m6j5igxb.json'),
+                  child:Lottie.asset('assets/images/register.json'),
                 ),
                 const Padding(
                   padding: EdgeInsets.all(8.0),

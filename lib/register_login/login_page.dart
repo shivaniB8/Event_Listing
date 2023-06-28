@@ -28,8 +28,7 @@ class _LoginPageState extends State<LoginPage> {
             key: formKey,
             child: Column(
               children: [
-                Lottie.network(
-                    'https://assets4.lottiefiles.com/packages/lf20_MbephoYReu.json'),
+                Lottie.asset('assets/images/login.json'),
                 const Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(

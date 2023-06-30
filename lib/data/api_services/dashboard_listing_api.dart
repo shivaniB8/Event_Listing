@@ -12,9 +12,10 @@ Future<List<Event>> getEvents() async {
 return json.map<Event>((user) => Event.fromJson(user)).toList();
 }
 
-Future<AllEvents> getAllEvents()async{
+Future<AllEvents> getAllEvents(int index)async{
   List<Event> eventList = await getEvents();
-  final uri= Uri.parse(eventList.first.data??'https://allevents.s3.amazonaws.com/tests/all.json');
+  print(eventList[index].category);
+  final uri= Uri.parse(eventList[index].data??'https://allevents.s3.amazonaws.com/tests/all.json');
   final response = await http.get(uri);
   final body = response.body;
   final json = Map<String, dynamic>.from(jsonDecode(body));

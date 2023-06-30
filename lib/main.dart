@@ -1,5 +1,4 @@
 import 'package:all_events_task/common/route_generator.dart';
-import 'package:all_events_task/dashboard/dashboard_page.dart';
 import 'package:all_events_task/generated/l10n.dart';
 import 'package:all_events_task/register_login/registration_page.dart';
 import 'package:all_events_task/register_login/model/user_details.dart';

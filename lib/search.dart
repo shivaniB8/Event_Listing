@@ -56,7 +56,8 @@ class SearchProjectField extends StatelessWidget {
               },
 
               suggestionsCallback: (String pattern) {
-                return list;
+                RegExp regExp = RegExp(pattern, caseSensitive: false);
+                return list.where((item) => regExp.hasMatch(item)).toList();
               },
 
               onSuggestionSelected: (selectedSuggestion) {
